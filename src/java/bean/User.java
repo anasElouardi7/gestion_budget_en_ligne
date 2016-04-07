@@ -38,11 +38,29 @@ public class User implements Serializable {
     private EntiteAdministratif entiteAdministratif; // doyen matalane howa chef d idara o chef de filiere GC
     @ManyToOne
     private Faculte faculte;
-
+private String login;
+private String password;
     //**************************************************************
     public Long getId() {
         return id;
     }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+    
 
     public void setId(Long id) {
         this.id = id;
